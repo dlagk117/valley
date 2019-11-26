@@ -3,27 +3,114 @@
 <head>
 	<title>uncanny</title>
 	<style type="text/css">
-		html{margin: 0; background: black; padding: 0;}
-		body{position: relative;}
-		div{margin: auto; text-align: center;}
-		img{width: 1000px; position: relative; z-index: 20;}
+@font-face { font-family: 'NotoSerifKR'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NotoSerifKR.woff') format('woff'); font-weight: normal; font-style: normal; }
+		html{margin: 0;  background: black; padding: 0;   font-family: 'NotoSerifKR'; color: white; font-size: 20px;}
+		body{position: relative; margin: 0; padding: 0;}
+	section{height: 1500px; position: relative; overflow: hidden;}
+	img{ width:600px; position: absolute; }
+	div{overflow: hidden;}
+	.box{color: black; background: black; opacity: 1; width: 600px; height: 400px; position: absolute;}
+
+	.text{  width:700px; font-size: 18px; line-height: 1.9; color:black; position: absolute; font-weight: 300;}
+	.leet15 {left: 15%; margin-top: 50px;}
+	.leet25 {left: 25%;margin-top: 50px;}
+	#monitor{position: fixed; z-index: 9999; background: black; color: white; padding: 5px; top: 0; right: 0; width: 70px;}
+	#aa{ position: relative; background: url(lllogo.gif) 0% 0% /  cover; overflow: hidden;
+		background-attachment: fixed;}	
+
+	#bb{ position: relative;     margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px; height: 500px;
+ background: url(dfshr.gif)  no-repeat center top;}
+
+	#cc{ position: relative;  height: 500px;    margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+   background: url(familiar.gif)  no-repeat center top;}			
+	.logoo {animation: 1s gof linear 1s forwards; }	
+	.ani {animation: 3s gou linear 0s infinite  alternate;}	
+	.form {width: 100px; height: 150px; border: 1px solid white; padding: 10px; background: white; }
+
+	@keyframes
+		gor { from{opacity: 1; left:-20%; width: 0%;  } to{ opacity: 1; left: 600px; width: 43%;} 
+		}
+	@keyframes	
+		gor2 { from{opacity: 1; left:-20%; width: 0%;  } to{ opacity: 1; left: 450px; width: 43%;} 
+		}		
+	@keyframes	
+		gof {
+			from{opacity: 0;   } to{ opacity: 1; } 
+		}	
+	@keyframes	
+		gou { from{ top:100%;   } to{   top:75%; } 	
+	@keyframes	
+		gou2 { from{ top:5%;   } to{   top:25%; } 						
+
+
 
 	</style>
 </head>
 <body>
-<section>
-	<div>
-		<img src="./conti-01.png">
-	
-	</div>
-	<div>
-		<img src="./conti-02.png">
-	<iframe  width="607" height="447" src="https://www.youtube.com/embed/SgCxCZNkQ9E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; left: 55%; top: 1400px;  z-index: 22;">...</iframe>
-	</div>
-	<div>
-		<img src="./conti-03.png">
-	<iframe width="642" height="482" src="https://www.youtube.com/embed/zl6hNj1uOkY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; left: 35%; top: 5900px; margin-bottom: 100px;  z-index: 22;">...</iframe>	
-	</div>
+<section id="aa">
+
+	<div id="monitor"></div>
+
+	<div> <img src="logo.png" class="logoo"  style="width: 600px;left: 500px; top: 200px; z-index: 20; opacity: 0;"></div>
+	<div class="box logoo"  style=" top: 180px; overflow: hidden; width: 100%; z-index: 15; opacity: 0;"></div>
+
+		<div><p class="text leet25" style="top: 650px; opacity: 0;" id="un1"> <span style="background: white; ">언캐니(Uncanny)<br> 기이한, 이상한, 묘한 어근이 되는 heim는 '집' 또는 '안락함','편안함'이라는 뜻을 지닌다. 여기에 un이 붙게 되면 낯설음, 불편함 등의 뜻이 된다.<br>
+	친숙하면서도 어쩐지 낯설고 두려운 감정을 정의한다.</p> </div>
+		<div><p class="text leet25" style="top: 950px; opacity: 0;" id="un2"> <span style="background: white; "> Uncanny에 대한 생각은 과거부터 지금까지도 의문이 제기된다. <br>어떻게 낯설고 두려운 존재 또는 그러한 분위기에 친숙함을 느낄 수 있을까? <br>왜 우리는 돈을 내면서까지 기괴함을 경험하러 가며<br> 괴로워하면서도 계속 Uncanny한 것들을 찾는것일까. </span></p> </div>
+		<div ><img src="sophia.png" class="ani" style="left: 60%; top: 80%;"></div>
+</section>		
+
+
+<section style="height: 800px;">
+	<div style="background: black; height: 400px; width: 100%;"></div>
+	<div ><p class="text leet25" style="font-size: 50px; width: 100%; top: 25%; " > <span id="un3"  style="background: white; opacity: 0; ">
+		 당신을 Uncanny 하게 하는 것은 무엇인가? 
+	 </span></p> </div>	
+	<div ><p class="text leet25" style=" top: 40%;  width: 80%;" > <span id="un4"  style="background: white;  opacity: 0; ">
+		Uncanny를 불러일으키는 요소에 대한 분석은 학자들마다 판이하고 집중하는 부분이 다르다. <br> 에른스트는 사람들을 불안하게 하는 것은 그 무언가, 불친숙한 낯설음에 주목했다.<br> 프로이트는 억압된 대상의 회귀에서 느껴지는 낯설지만 친숙한 감정이라고 주목했다. 
+	 </span></p> </div>		 
 </section>
+
+<section id="bb">
+<div > <p class="text leet25 form"  style="text-align: center; width: 200px;font-size: 20px; height: 50px; left: 43%; top: 40%; " > <a href="ernst.html">Ernst Jentsch</a></p></div>	
+</section>
+<section id="cc">	
+	<div > <p class="text leet25 form"  style=" text-align: center; width: 200px; font-size: 20px; height: 50px; top: 40%; left: 43%; " ><a href="freud.html">Sigmund Freud </a> </p></div>	
+</section>
+
+
+<script type="text/javascript">
+		
+
+		window.onscroll = function(){
+		var t = document.documentElement.scrollTop + document.body.scrollTop;
+		monitor.innerHTML = t;
+
+		
+if(t > 200){
+			un1.style.animation = "gor 2s forwards";}else{
+			un1.style.animation = "";}
+if(t > 350){
+			un2.style.animation = "gor2 4s forwards";}else{
+			un2.style.animation = "";}
+if(t > 1000){un4.style.animation = "4s gof 1s forwards";
+			un3.style.animation = "gof 4s forwards";}else{
+			un3.style.animation = "";
+			un4.style.animation = "";}
+
+
+
+	
+
+
+	}		
+</script>
+
 </body>
 </html>
